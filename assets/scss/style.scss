@@ -6,12 +6,24 @@ $hightContrastColor: #f9f9f9;
 $textColor: $hightContrastColor;
 
 .linkTree_page {
-    background: url("/assets/img/ia2.jpg");
-    background-size: cover;
     color: $textColor;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background: url("/assets/img/texture.jpg");
+    background-size: cover;
+}
+
+.linkTree_page_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.linkTree_page_background_image {
+    height: 100%;
+    width: auto;
+    position: relative;
 }
 
 .linkTree_page_data {
@@ -21,16 +33,16 @@ $textColor: $hightContrastColor;
     height: 100%;
     flex-direction: column;
     background-color: rgba($darkColor, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(7.5px);
+    justify-content: space-evenly;
 }
 
 .linkTree_page_data_header {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3vh 2vh;
 }
 
 .linkTree_page_data_header_avatar {
@@ -44,8 +56,6 @@ $textColor: $hightContrastColor;
     margin: auto;
     text-align: justify;
     padding: 1vh 5vh;
-    margin-bottom: 3vh;
-    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -53,8 +63,7 @@ $textColor: $hightContrastColor;
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: auto;
-    padding: 3vh 2vh;
+    margin: 0 auto;
 }
 
 .linkTree_page_data_linksContainer_link {
@@ -76,11 +85,9 @@ Responsive
 @media (max-width: 992px) {
     .linkTree_page_data_header {
         width: 95%;
-        padding: 3vh 0;
     }
 
     .linkTree_page_data_linksContainer {
         width: 95%;
-        padding: 3vh 0;
     }
 }
